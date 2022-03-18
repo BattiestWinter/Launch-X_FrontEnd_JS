@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Estilo-->
+    <link rel="stylesheet" href="./css/Estilo.css">
+    <title>Pokedex</title>
+</head>
+<body>
+
+    <div class="busqueda">
+        <input type="text" placeholder="Pokemon" id="pokeName" name="pokeName">
+        <button onclick="fetchPokemon()">Search</button>
+    </div>
+    
+    <div class="contenedorP" id="pFondo">
+        <div class="Name-Id">
+            <div id="pName"></div>
+            <div id="pId"></div>
+        </div>
+        
+        <img src="./Imagenes/Silueta.png" alt="Pokemon Image" id="pokeImage" width="300px">
+        
+        
+        <div class="Weigth-Height">
+            <div id="pWeight"></div>
+            <div id="pHeight"></div>
+        </div>
+
+        <div id="pTypes"></div>
+    </div>
+
+    <div class="contenedorS">
+        <div id="pStats"></div>
+    </div>
+    
+    
+</body>
+
+    <footer>
+        <script src="./Pokedex.js"></script>
+    </footer>
+
+</html>
