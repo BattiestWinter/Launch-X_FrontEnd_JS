@@ -46,6 +46,10 @@ const fetchPokemon = () => {
         if(res.status != 200){
             pokeImg("./Imagenes/Silueta.png");
             pokeFondoS.style.backgroundColor = '#FFFFFF';
+            pokeWeightS.textContent = ``;
+            pokeHeightS.textContent = ``;
+            pokeTypesS.textContent = ``;
+            pokeStatsS.textContent = ``;
         }else{
             return res.json();
         }

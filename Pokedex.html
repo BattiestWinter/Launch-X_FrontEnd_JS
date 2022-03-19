@@ -15,26 +15,55 @@
         <button onclick="fetchPokemon()">Search</button>
     </div>
     
-    <div class="contenedorP" id="pFondo">
-        <div class="Name-Id">
-            <div id="pName"></div>
-            <div id="pId"></div>
-        </div>
-        
-        <img src="./Imagenes/Silueta.png" alt="Pokemon Image" id="pokeImage" width="300px">
-        
-        
-        <div class="Weigth-Height">
-            <div id="pWeight"></div>
-            <div id="pHeight"></div>
+    <div class="contenedor">
+
+        <!--Parte Izquierda-->
+        <div class="contenedorIzq">
+            <div class="fondoPantallaP">
+                
+                <div class="pantallaP" id="pFondo">
+                    
+                    <div class="Name-Id">
+                        <div id="pName"></div>
+                        <div id="pId"></div>
+                    </div>
+                    
+                    <div class="Imagen">
+                        <img src="./Imagenes/Silueta.png" alt="Pokemon Image" id="pokeImage" width="150px">
+                    </div>
+                    
+                    <div class="subContenedor">
+                        <div class="Weight-Height">
+                            <div id="pWeight"></div>
+                            <div id="pHeight"></div>
+                        </div>
+                        
+                        <div class="Weight-Height">
+                            <div id="pTypes"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
 
-        <div id="pTypes"></div>
+        <!--Parte Intermedia-->
+        <div class="contenedorInt">
+            <div class="contenedorIntV"></div>
+            <div class="contenedorIntV"></div>
+        </div>
+
+        <!--Parte Derecha-->
+        <div class="contenedorDer">
+            <div class="pantallaS">
+                <div id="pStats" class="Stats"></div>
+            </div>
+        </div>
+
     </div>
 
-    <div class="contenedorS">
-        <div id="pStats"></div>
-    </div>
+    
     
     
 </body>
